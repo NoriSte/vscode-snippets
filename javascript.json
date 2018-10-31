@@ -14,7 +14,7 @@
   // }
   "tslint-console": {
     "prefix": "console",
-    "description": "console.log eslint-friendly",
+    "description": "console.log tslint-friendly",
     "body": [
       "// tslint:disable-next-line:no-console",
       "console.${2:log}(${1:'log something'});$0"
