@@ -19,5 +19,16 @@
       "// tslint:disable-next-line:no-console",
       "console.${2:log}(${1:'log something'});$0"
     ]
+  },
+  "reduce": {
+    "prefix": "reduce",
+    "description": "array.reduce",
+    "body": [
+      "const ${1:new} = ${2:array}!.reduce((acc:${3:any}[], item) => {",
+      "  $0",
+      "  acc.push(item);",
+      "  return acc;",
+      "}, []);"
+    ]
   }
 }
