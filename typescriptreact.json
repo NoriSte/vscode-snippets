@@ -28,6 +28,6 @@
   "debugger": {
     "prefix": "debugger",
     "description": "A debugger statement without tslint worryings",
-    "body": "debugger; // tslint:disable-line TODO: remove it!!"
+    "body": ["// TODO: remove it!!", "debugger; // tslint:disable-line"]
   }
 }
