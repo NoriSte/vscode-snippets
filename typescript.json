@@ -15,10 +15,7 @@
   "tslint-console": {
     "prefix": "console",
     "description": "console.log eslint-friendly",
-    "body": [
-      "// tslint:disable-next-line:no-console",
-      "console.${2:log}(${1:'log something'});$0"
-    ]
+    "body": ["// tslint:disable-next-line:no-console", "console.${2:log}(${1:'log something'});$0"]
   },
   "reduce": {
     "prefix": "reduce",
@@ -30,5 +27,20 @@
       "  return acc;",
       "}, []);"
     ]
+  },
+  "debugger": {
+    "prefix": "debugger",
+    "description": "A debugger statement without tslint worryings",
+    "body": ["// TODO: remove it!!", "debugger; // tslint:disable-line"]
+  },
+  "logger.log": {
+    "prefix": "logger.log",
+    "description": "Log",
+    "body": "logger.log($1);$0"
+  },
+  "import-logger": {
+    "prefix": "import logger",
+    "description": "Import Logger",
+    "body": "import logger from '@/utils/logger';"
   }
 }

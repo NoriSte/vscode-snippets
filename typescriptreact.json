@@ -29,5 +29,15 @@
     "prefix": "debugger",
     "description": "A debugger statement without tslint worryings",
     "body": ["// TODO: remove it!!", "debugger; // tslint:disable-line"]
+  },
+  "logger.log": {
+    "prefix": "logger.log",
+    "description": "Log",
+    "body": "logger.log($1);$0"
+  },
+  "import-logger": {
+    "prefix": "import logger",
+    "description": "Import Logger",
+    "body": "import logger from '@/utils/logger';"
   }
 }
