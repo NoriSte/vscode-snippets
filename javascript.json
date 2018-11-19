@@ -15,9 +15,17 @@
   "tslint-console": {
     "prefix": "console",
     "description": "console.log tslint-friendly",
+    "body": ["// tslint:disable-next-line:no-console", "console.${2:log}(${1:'log something'});$0"]
+  },
+  "jest-mock-console": {
+    "prefix": "jest-mock-console",
+    "description": "mock the console.log function",
     "body": [
-      "// tslint:disable-next-line:no-console",
-      "console.${2:log}(${1:'log something'});$0"
+      "import mockConsole from 'jest-mock-console';",
+      "// @see https://www.npmjs.com/package/jest-mock-console",
+      "const restoreConsole = mockConsole();",
+      "expect(console.log).toHaveBeenCalledWith([]);",
+      "restoreConsole();"
     ]
   }
 }
