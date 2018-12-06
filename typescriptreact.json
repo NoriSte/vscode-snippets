@@ -39,5 +39,17 @@
     "prefix": "import logger",
     "description": "Import Logger",
     "body": "import logger from '@/utils/logger';"
+  },
+  "use-fontawesome-icon": {
+    "prefix": "use fontawesome icon",
+    "description": "Import and use Fontawesome icon",
+    "body": [
+      "import { ${1:faChevronLeft} } from \"@fortawesome/pro-solid-svg-icons\";",
+      "import { library } from \"@fortawesome/fontawesome-svg-core\";",
+      "",
+      "library.add($1);",
+      "// use it with <FontAwesomeIcon icon={[\"fas\", \"chevron-left\"]} />",
+      "<FontAwesomeIcon icon={[\"fas\", \"$1\"]} />"
+    ]
   }
 }
