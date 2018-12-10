@@ -46,6 +46,7 @@
     "body": [
       "import { ${1:faChevronLeft} } from \"@fortawesome/pro-solid-svg-icons\";",
       "import { library } from \"@fortawesome/fontawesome-svg-core\";",
+      "import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';",
       "",
       "library.add($1);",
       "// use it with <FontAwesomeIcon icon={[\"fas\", \"chevron-left\"]} />",
