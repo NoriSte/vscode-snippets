@@ -22,6 +22,7 @@
       "    ${1:property}: null,",
       "  }",
       "  this.${2:callback} = this.$2.bind(this);",
+      "  this.state = initialState;",
       "}"
     ]
   },
